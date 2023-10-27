@@ -9,7 +9,17 @@ import java.util.Optional;
 
 public class MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+
+    // 이렇게 써버리면 외부에서 서비스를 부를때 안에 쓰는 멤버 리포지토리와 그 서비스의 새롭게 선언한 멤버 리포지토리가 다른 객체임
+    //private final MemberRepository memberRepository = new MemoryMemberRepository();
+
+
+    // DI 개념
+    private final MemberRepository memberRepository;
+
+    public MemberService(MemberRepository memberRepository) {
+         this.memberRepository = memberRepository;
+    }
 
     /**
      * 회원 가입
