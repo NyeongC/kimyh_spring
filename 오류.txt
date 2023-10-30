@@ -1,0 +1,9 @@
+gradle Check your ViewResolver setup!
+
+데스크탑에서 하다가 기존 소스 풀받고 하니깐 
+타임리프 추가를 안해서 오류남.
+
+. 반환하는 뷰의 이름을 바꾼다.
+2. 타임리프 추가 (저의 경우 타임리프를 추가한 줄 알았는데 추가하지 않은 에러였습니다)
+Thymeleaf를 추가하는 경우 Thymeleaf의 뷰리졸버가 InternalResourceView 클래스를 대체한다고 합니다. 
+
