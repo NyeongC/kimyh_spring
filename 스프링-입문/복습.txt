@@ -24,4 +24,13 @@ resources:templates/ +{ViewName}+ .html
 ** : spring-boot-devtools 라이브러리를 추가하면, html 파일을 컴파일만 해주면 서버 재시작 없이
 View 파일 변경이 가능하다.
 
+- MVC와 템플릿 엔진
+MVC: Model, View, Controller
 
+
+@RequestParam("name") String name - get url로 정보 넘겨서 받음
+
+@ResponseBody 를 사용하면 뷰 리졸버( viewResolver )를 사용하지 않음
+대신에 HTTP의 BODY에 문자 내용을 직접 반환(HTML BODY TAG를 말하는 것이 아님)
+
+- 회원 관리 백엔드 개발
