@@ -1,0 +1,27 @@
+- 프로젝트 생성
+디펜던시 : Spring Web, Thymeleaf
+build.gradle 자바 11, spring 2.5.6으로 변경 후 코끼리
+
+initializr 에서 aop는 어디?
+
+
+프로젝트명Application 으로 구동 확인.
+
+http://localhost:8080/
+
+- 의존성 추가
+build.gradle 에 오른쪽 마우스 + 제너레이트
+
+- View 환경 설정
+
+스프링 부트가 제공하는 Welcome Page 기능
+resources/static/index.html <- 웰컴 페이지
+
+컨트롤러에서 리턴 값으로 문자를 반환하면 뷰 리졸버( viewResolver )가 화면을 찾아서 처리한다.
+스프링 부트 템플릿엔진 기본 viewName 매핑
+resources:templates/ +{ViewName}+ .html
+
+** : spring-boot-devtools 라이브러리를 추가하면, html 파일을 컴파일만 해주면 서버 재시작 없이
+View 파일 변경이 가능하다.
+
+

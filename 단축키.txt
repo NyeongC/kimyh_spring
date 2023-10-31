@@ -1,1 +1,7 @@
 go to test : Ctrl + Shift + T
+
+Reafactor This : Ctrl + Alt + Shift + T
+
+프로젝트 스트럭쳐  : Ctrl + Alt + Shift + S
+
+Setting  : Ctrl + Alt  + S
