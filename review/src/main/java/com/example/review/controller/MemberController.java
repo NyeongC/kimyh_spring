@@ -13,7 +13,7 @@ import java.util.List;
 @Controller
 public class MemberController {
 
-    private MemberService memberService;
+    private final MemberService memberService;
 
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
