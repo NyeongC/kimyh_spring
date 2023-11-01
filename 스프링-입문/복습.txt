@@ -78,3 +78,7 @@ AOP가 필요한 상황
 
 의존성 추가
 implementation 'org.springframework.boot:spring-boot-starter-aop'
+
+@Component
+@Aspect
+@Around("execution(* com.example.review..*(..))") // com.example.review 안에 적용
