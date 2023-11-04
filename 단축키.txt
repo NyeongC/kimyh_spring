@@ -11,3 +11,5 @@ Setting  : Ctrl + Alt  + S
 psvm : public static void main
 
 soutv : System.out.print
+
+리네임 : alt + Enter
