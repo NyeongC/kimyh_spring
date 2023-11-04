@@ -32,3 +32,17 @@ SOLID
 • ISP: 인터페이스 분리 원칙 (Interface segregation principle)
 • DIP: 의존관계 역전 원칙 (Dependency inversion principle)
 
+- 회원 도메인 설계의 문제점
+OCP, DIP을 잘 지키고 있나?
+
+멤버서비스 임플은 어떤 문제가 있냐면
+분명 멤버리포지토리 인터페이스를 의존하는데( 이건 오키)
+실제 할당하는 부분도 구현체를 의존하고있음 
+
+public class MemberServiceImpl implements MemberService{
+
+
+    private final MemberRepository memberRepository = new MemoryMemberRepository();
+
+현재 멤버서비스 임플은 memberRepository , new MemoryMemberRepository(); 둘다 의존적임 (추상화, 구체화 둘다)
+-> DIP 위반 

@@ -5,3 +5,9 @@ Reafactor This : Ctrl + Alt + Shift + T
 프로젝트 스트럭쳐  : Ctrl + Alt + Shift + S
 
 Setting  : Ctrl + Alt  + S
+
+변수? 자동 생성 : Ctrl + Alt  + V
+
+psvm : public static void main
+
+soutv : System.out.print
