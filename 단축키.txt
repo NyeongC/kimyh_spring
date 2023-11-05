@@ -13,3 +13,5 @@ psvm : public static void main
 soutv : System.out.print
 
 리네임 : alt + Enter
+
+수정된 소스 : ctrl + E, 바로 엔터치면 이전코드로 감
