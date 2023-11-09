@@ -4,18 +4,25 @@ import hello.core.AppConfig;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@SpringBootTest
 class MemberServiceTest {
 
     MemberService memberService;
 
-    @BeforeEach
-    public void beforeEach(){
-        AppConfig appConfig = new AppConfig();
-        memberService = appConfig.memberService();
+    @Autowired
+    public MemberServiceTest(MemberService memberService) {
+        this.memberService = memberService;
     }
+    //    @BeforeEach
+//    public void beforeEach(){
+//        AppConfig appConfig = new AppConfig();
+//        memberService = appConfig.memberService();
+//    }
 
     @Test
     void join() {
